@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bali Island Tours</title>
+        <link href="assets/main.css" rel="stylesheet" />
+        <link href="assets/media-query.css" rel="stylesheet" />
+        <script type="text/javascript" src="assets/jquery.js"></script>
+        <script type="text/javascript" src="assets/main.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="d-xs-none d-s-none d-block">
+                    <li><a href=""><img src="assets/images/logo.png" style="height: 40px;"></a></li>
+                    <li class="navbar"><a href="#contacts"><strong>CONTACT US</strong></a></li>
+                    <li class="navbar"><a href="#aboutus"><strong>ABOUT US</strong></a></li>
+                    <li class="navbar"><a href="#tours"><strong>TOURS</strong></a></li>
+                    <li class="navbar"><a href="#bali"><strong>BALI</strong></a></li>
+                </ul>
+                <div class="mobile-container d-xs-block d-none">
+                    <a href="" onclick="selectMenu(this)"><img src="assets/images/logo.png" style="height: 25px; margin-top: 5px;"></a>
+                    <div id="burger-icon" onclick="toggleBurgerMenu(this)" class="nav-float-right">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                        
+                    <div class="topnav" class="nav-float-right">
+                        <div id="links">
+                            <a href="#bali" onclick="selectMenu(this)">BALI</a>
+                            <a href="#tours" onclick="selectMenu(this)">TOURS</a>
+                            <a href="#aboutus" onclick="selectMenu(this)">ABOUT US</a>
+                            <a href="#contacts" onclick="selectMenu(this)">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="banner-container">
+                <div class="message-container">
+                    <div id="welcome-message">
+                        <span><h2>WELCOME TO BALI ISLAND TOURS AND TRAVEL!</h2></span>
+                        <span><h4>Let's Start Your Amazing Journey in ​​Bali</h4></span>
+                    </div>
+                </div>
+                <div class="slideshow-container fit-container" id="home-slider">
+                    <div id="slider-loader"></div>
+                    <div class="pic-slides fade">
+                        <img src="assets/images/butterfly.jpg">
+                    </div>
+                    
+                    <div class="pic-slides fade">
+                        <img src="assets/images/air terjun.jpg">
+                    </div>
+                    
+                    <div class="pic-slides fade">
+                        <img src="assets/images/tegallalang.jpg">
+                    </div>
+
+                    <div class="pic-slides fade">
+                        <img src="assets/images/coffee.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <article class="section card cloud" id="bali">
+                    <h2><span>BALI ISLAND</span></h2>
+                    <div class="pic-container">
+                        <img src="assets/images/bali.jpg" alt="Bali Island" class="col-s-12 col-8 col-l-4" width="100%">
+                        <div class="desc">
+                            <p>Bali is province in Indonesia whose provincial capital is Denpasar.
+                                Bali is also known as the Island of Gods and the Island of a Thousand Temples. Bali has a variety of cultures that are unique and different from the others.
+                                Not only culture, Bali also has very beautiful scenery. The beauty of Bali can be enjoyed at every point.
+                                Apart from consisting of Bali Island, the province of Bali also consists of smaller islands around it, namely Nusa Penida Island, Nusa Lembongan Island, Nusa Ceningan Island, Serangan Island and Menjangan Island. 
+                                The majority of Balinese people are Hindus. That's why Bali has different cultures.
+                                In the world, Bali is well-known as a tourism destination with its unique arts.</p>
+                            <p>Geographically, Bali is located between Java Island and Lombok Island. Bali is a tropical Island just like other parts of Indonesia. Mount Agung is the highest point in Bali at 3,148 m. This volcano last erupted in March 1963. Mount Batur is also one of the mountains in Bali.
+                                In contrast to the northern part, the southern part of Bali is lowland which is flowed by rivers.</p>
+                            <p>The most famous places in Bali are Ubud as a center of arts and resorts, located in Gianyar Regency. Nusa Lembongan is a dive site, located in Klungkung Regency. 
+                                Meanwhile, Kuta, Seminyak, Jimbaran and Nusa Dua are some of the places that are the main tourism destinations, both beach tourism and resorts, spas, and others, located in Badung Regency. 
+                                The total area of ​​Bali Province is 5,636.66 km2 or 0.29% of the territory of the Republic of Indonesia. Administratively, Bali Province is divided into 8 districts, 1 municipality, 55 sub-districts and 701 villages / wards. Every district has its own beauty and privileges which can be enjoyed.
+                                Such as Temples, Beaches, Foods, and many more.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section card cloud" id="tours">
+                    <h2><span>TOURS</span></h2>
+                    <div class="row">
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#eastbali"><img alt="East Bali Tour" src="assets/images/kintamani.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#eastbali">
+                                        <strong class="text transition title">EAST BALI TOUR</strong>
+                                        <span class="text transition desc">Enjoy the beauty landscape and the culture of ​​Bali</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#westbali"><img alt="West Bali Tour" src="assets/images/sebatu.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#westbali">
+                                        <strong class="text transition title">WEST BALI TOUR</strong>
+                                        <span class="text transition desc">Let's do the Journey to the West</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#northbali"><img alt="North Bali Tour" src="assets/images/waterfall.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#northbali">
+                                        <strong class="text transition title">NORTH BALI TOUR</strong>
+                                        <span class="text transition desc">Have a good time in the North of Bali.</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#southbali"><img alt="South Bali Tour" src="assets/images/sunset.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#southbali">
+                                        <strong class="text transition title">SOUTH BALI TOUR</strong>
+                                        <span class="text transition desc">The best area to enjoy the Bali Sunset.</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#centralbali"><img alt="Central Bali Tour" src="assets/images/ceking.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#centralbali">
+                                        <strong class="text transition title">CENTRAL BALI TOUR</strong>
+                                        <span class="text transition desc">You will find the best journey and experience here.</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-s-6 col-4 col-l-3">
+                            <figure>
+                                <a href="#spiritual"><img alt="Bali Spiritual Tour" src="assets/images/pancoran.jpg"/></a>
+                                
+                                <figcaption class="transition">
+                                    <a href="#spiritual">
+                                        <strong class="text transition title">BALI SPIRITUAL TOUR</strong>
+                                        <span class="text transition desc">Refresh your body and soul while you are on holiday.</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section card" id="aboutus">
+                    <h2><span>ABOUT US</span></h2>
+                    <div>
+                        <div width="100%" class="col-s-12 col-4">
+                            <img src="assets/images/team 1.jpg"/>
+                        </div>
+                        <div width="100%" class="col-s-12 col-4">
+                            <img src="assets/images/team 2.jpg"/>
+                        </div>
+                        <div width="100%" class="col-s-12 col-4">
+                            <img src="assets/images/team 3.jpg"/>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>We warmly welcome you to Bali Island Tours and Travel.
+                            Here you will find some information about Bali, the attractions and sights as well as some useful tips for your stay in Bali.
+                            We would be happy to accompany you on your visit to Bali on one of our tours or a tour according to your wishes.</p>
+                        <p>We are a family business, a team with experience in tourism as a licensed tour guide.
+                            Through many years of professional experience, we have extensive knowledge of the sights, art and culture, as well as the country, the people and the Balinese Culture.
+                            We offer "Balinese Culture Tours and Adventure" with German and English speaking guide.                        
+                            Our tours under the motto  “Knowing and Loving Bali”  will certainly remain an unforgettable experience.
+                            See you in Bali.</p>
+                    </div>
+                </article>
+
+                <article class="section card cloud" id="contacts">
+                    <h2><span>CONTACT US</span></h2>
+                    <div>
+                        <a href="https://www.instagram.com/eliskarini" target="_blank">
+                            <img alt="Instagram" src="assets/images/instagram.png"/>
+                        </a>
+                        <a href="https://www.twitter.com/eliskarini" target="_blank">
+                            <img alt="Twitter" src="assets/images/twitter.png"/>
+                        </a>
+                    </div>
+                </article>
+            </div>
+                
+            <aside class="card col-s-8 col-6 col-l-4">
+                <img src="assets/images/foto profil.jpg" alt="biodata picture" width="100%">
+                <h2><span>About Me</span></h2>
+                <p>
+                    Full Name: Kadek Eliskarini<br>
+                    Username: Elis Karini
+                </p>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                &copy; 2020 Bali Island Tours.
+            </div>
+        </footer>
+    </body>
+</html>
